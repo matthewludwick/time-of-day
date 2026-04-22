@@ -55,6 +55,31 @@
     </div>
 
     <script>
+
+        myDate = new Date();
+        myHour = myDate.getHours();
+        mySentence = "";
+        myColor = "";
+
+
+
+        if(myHour >= 12){
+
+        //alert("It's after noon!");
+            mySentence = "It's after noon!";
+            myColor = "blue";
+        }else{
+            mySentence = "It's not after noon!";
+            myColor = "purple";
+        //alert("It's not after noon!");
+
+        }
+
+        document.getElementById("time-text").innerHTML = mySentence;
+        //document.body.style.backgroundColor = myColor;
+        document.querySelector('html')style.backgroundColor = myColor;
+
+        
         // We will use this section to write our if/else logic
         // Example: document.querySelector('#time-text').innerHTML = "Good Morning!";
         
