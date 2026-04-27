@@ -79,7 +79,7 @@
         //alert("It's after noon!");
             mySentence = "It's after noon!";
             myColor = "blue";
-            myPic = afternoon.jpg
+            myPic = "afternoon.jpg"
         }else{
             mySentence = "It's not after noon!";
             myColor = "purple";
@@ -90,10 +90,8 @@
         document.getElementById("time-text").innerHTML = mySentence;
         //document.body.style.backgroundColor = myColor;
         document.querySelector('html').style.backgroundColor = myColor;
-        
-        document.getElementById("time-pic");
-
-        myPic = "images/" + myPic;
+                myPic = "images/" + myPic;
+        document.getElementById("time-pic").src = myPic;
 
         
         // We will use this section to write our if/else logic
