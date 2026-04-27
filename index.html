@@ -48,20 +48,30 @@
         
         <h2 id="time-text">What time is it?</h2>
 
-        <p>
-        This page uses JavaScript to dynamically change the background color, message and image based on each of the following times of day:
-        </p>
-        
-        
-        <div>
-        <ul>
+       <p>
+    This page uses JavaScript to dynamically change the background color, 
+    message, and image based on each of the following times of day:
+</p>
+
+<div style="width: 50%;">
+    <ul>
         <li>Morning (5am to 12 noon)</li>
         <li>Afternoon (12 noon to 6pm)</li>
         <li>Evening (6pm to 11pm)</li>
         <li>Night (11pm to 5am)</li>
-        </ul>
-        </div>    
-        
+    </ul>
+</div>    
+
+<p>
+    To do this, I am using a compound <code>if/else if</code> block to check the time ranges 
+    pulled from the <code>getHours()</code> method of the JavaScript <code>Date()</code> object.
+</p>
+
+<p>
+    Once the time is determined, I use <strong>document.getElementById()</strong> and 
+    <strong>document.querySelector()</strong> to target specific HTML elements and 
+    update the page dynamically.
+</p>
 
         <img id="time-pic" src="https://dummyimage.com/300x400" alt="Time of Day Image">
     </div>
